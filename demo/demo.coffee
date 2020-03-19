@@ -9,23 +9,26 @@ document.addEventListener 'DOMContentLoaded', ->
 
   demos = [
     new OriDomi '.demo1', vPanels: 5, ripple: true
-    new OriDomi '.demo2', maxAngle: 89, ripple: true
-    new OriDomi '.demo3', vPanels: 8, ripple: true
+    new OriDomi '.demo1_1', vPanels: 5, ripple: true
+    new OriDomi '.demo1_2', vPanels: 5, ripple: true
+    new OriDomi '.demo1_3', vPanels: 5, ripple: true
+    new OriDomi '.demo1_4', vPanels: 5, ripple: true
+    new OriDomi '.demo1_5', vPanels: 5, ripple: true
+    new OriDomi '.demo1_6', vPanels: 5, ripple: true
     new OriDomi '.demo4', vPanels: 4, ripple: true
-    new OriDomi '.demo5', hPanels: 4, ripple: true
     new OriDomi '.demo6', hPanels: 4, ripple: true, shading: false
-    new OriDomi '.demo7',
-      vPanels: [1, 1, 2, 3, 5, 8, 13, 21, 34].map((n) -> n * 1.1363636363636365).reverse()
   ]
 
   setTimeout ->
     demos[0].accordion 30
-    demos[1].reveal 40
-    demos[2].accordion -20, 'left'
-    demos[3].stairs 18, 'right'
-    demos[4].reveal 30, 'top'
-    demos[5].stairs 20, 'bottom'
-    demos[6].reveal 45, 'left'
+    demos[1].accordion 30
+    demos[2].accordion 30
+    demos[3].accordion 30
+    demos[4].accordion 30
+    demos[5].accordion 30
+    demos[6].accordion 30
+    demos[7].accordion 30
+    demos[8].accordion 30
   , 1000
 
 
